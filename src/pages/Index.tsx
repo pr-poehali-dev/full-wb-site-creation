@@ -368,7 +368,7 @@ export default function Index() {
             <Card className="bg-white/5 border-white/10 max-w-4xl mx-auto p-8">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop"
+                  src="https://cdn.poehali.dev/files/76a29704-62db-4b64-ba57-270f3642cdad.jpg"
                   alt="Наставник"
                   className="w-48 h-48 rounded-full object-cover"
                 />
