@@ -62,6 +62,7 @@ const reviews = [
 export default function Index() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const addToCart = (product: Product) => {
     setCart(prev => {
@@ -119,7 +120,17 @@ export default function Index() {
               </button>
             </div>
 
-            <Sheet>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="icon"
+                className="md:hidden border-white/20 hover:bg-white/10"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <Icon name={mobileMenuOpen ? "X" : "Menu"} size={20} />
+              </Button>
+
+              <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="relative border-white/20 hover:bg-white/10">
                   <Icon name="ShoppingCart" size={20} />
@@ -192,6 +203,58 @@ export default function Index() {
           </div>
         </div>
       </nav>
+
+      {mobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 top-[73px] z-40 bg-[#1A1F2C]/95 backdrop-blur-lg animate-fade-in">
+          <div className="container mx-auto px-4 py-8 space-y-4">
+            <button
+              onClick={() => {
+                setActiveSection('home');
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left text-xl text-white/80 hover:text-white transition-colors py-3 px-4 rounded-lg hover:bg-white/10"
+            >
+              Главная
+            </button>
+            <button
+              onClick={() => {
+                setActiveSection('catalog');
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left text-xl text-white/80 hover:text-white transition-colors py-3 px-4 rounded-lg hover:bg-white/10"
+            >
+              Каталог
+            </button>
+            <button
+              onClick={() => {
+                setActiveSection('content');
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left text-xl text-white/80 hover:text-white transition-colors py-3 px-4 rounded-lg hover:bg-white/10"
+            >
+              Содержание
+            </button>
+            <button
+              onClick={() => {
+                setActiveSection('about');
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left text-xl text-white/80 hover:text-white transition-colors py-3 px-4 rounded-lg hover:bg-white/10"
+            >
+              О наставнике
+            </button>
+            <button
+              onClick={() => {
+                setActiveSection('reviews');
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left text-xl text-white/80 hover:text-white transition-colors py-3 px-4 rounded-lg hover:bg-white/10"
+            >
+              Отзывы
+            </button>
+          </div>
+        </div>
+      )}
 
       <main className="container mx-auto px-4 py-12">
         {activeSection === 'home' && (
