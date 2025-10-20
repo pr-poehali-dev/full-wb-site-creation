@@ -21,7 +21,7 @@ interface CartItem extends Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'Курс "Wildberries Старт"',
+    name: 'Курс "FULL SELLER"',
     price: 60000,
     image: 'https://cdn.poehali.dev/files/82ec2ea4-8930-4c48-9222-81f2556faa7e.png',
     description: 'Базовый курс для начинающих продавцов на Wildberries',
