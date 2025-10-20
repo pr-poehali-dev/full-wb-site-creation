@@ -61,7 +61,7 @@ const reviews = [
 
 export default function Index() {
   const [cart, setCart] = useState<CartItem[]>([]);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('catalog');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const addToCart = (product: Product) => {
@@ -103,9 +103,6 @@ export default function Index() {
             </div>
             
             <div className="hidden md:flex items-center gap-8">
-              <button onClick={() => setActiveSection('home')} className="text-white/80 hover:text-white transition-colors">
-                Главная
-              </button>
               <button onClick={() => setActiveSection('catalog')} className="text-white/80 hover:text-white transition-colors">
                 Каталог
               </button>
@@ -208,15 +205,6 @@ export default function Index() {
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-0 top-[73px] z-40 bg-[#1A1F2C]/95 backdrop-blur-lg animate-fade-in">
           <div className="container mx-auto px-4 py-8 space-y-4">
-            <button
-              onClick={() => {
-                setActiveSection('home');
-                setMobileMenuOpen(false);
-              }}
-              className="block w-full text-left text-xl text-white/80 hover:text-white transition-colors py-3 px-4 rounded-lg hover:bg-white/10"
-            >
-              Главная
-            </button>
             <button
               onClick={() => {
                 setActiveSection('catalog');
