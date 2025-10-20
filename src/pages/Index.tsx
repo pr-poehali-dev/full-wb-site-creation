@@ -39,7 +39,7 @@ const products: Product[] = [
     id: 3,
     name: 'Консультация 1:1',
     price: 15000,
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop',
+    image: 'https://cdn.poehali.dev/files/388d4298-f403-458c-b2d1-979bc832ae7b.png',
     description: 'Персональная консультация с экспертом',
     ingredients: ['2 часа', 'Zoom встреча', 'План действий', 'Запись встречи']
   },
