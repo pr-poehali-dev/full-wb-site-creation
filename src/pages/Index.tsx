@@ -30,7 +30,7 @@ const products: Product[] = [
   {
     id: 2,
     name: 'Курс "FULL MANAGER WB"',
-    price: 120000,
+    price: 75000,
     image: 'https://cdn.poehali.dev/files/7c85a88e-3e6f-44eb-bd22-2f74e22b2c6b.png',
     description: 'Освой профессию менеджера Wildberries, длительность 6 недель',
     ingredients: ['10 модулей', '50 уроков', 'Поддержка 6 месяцев', 'Личный куратор']
