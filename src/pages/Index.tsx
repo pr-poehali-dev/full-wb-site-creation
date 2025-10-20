@@ -246,6 +246,13 @@ export default function Index() {
                     <p className="text-2xl font-bold text-[#8B5CF6] mb-4">{product.price.toLocaleString()} ₽</p>
                     <div className="space-y-2">
                       <Button
+                        variant="outline"
+                        className="w-full border-white/20 text-white hover:bg-white/10"
+                        onClick={() => setActiveSection('content')}
+                      >
+                        Содержание курса
+                      </Button>
+                      <Button
                         className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90"
                         onClick={() => {
                           if (product.id === 1) {
