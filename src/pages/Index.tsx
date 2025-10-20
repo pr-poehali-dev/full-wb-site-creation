@@ -24,7 +24,7 @@ const products: Product[] = [
     name: 'Курс "FULL SELLER"',
     price: 60000,
     image: 'https://cdn.poehali.dev/files/82ec2ea4-8930-4c48-9222-81f2556faa7e.png',
-    description: 'Базовый курс для начинающих продавцов на Wildberries',
+    description: 'Освой пошаговую стратегию действий для выхода на Wildberries',
     ingredients: ['5 модулей', '20 уроков', 'Поддержка 3 месяца', 'Сертификат']
   },
   {
