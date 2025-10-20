@@ -247,7 +247,7 @@ export default function Index() {
                     <Button
                       className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90"
                     >
-                      Оплатить
+                      Оплатить полностью
                     </Button>
                   </div>
                 </Card>
