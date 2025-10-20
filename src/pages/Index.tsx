@@ -412,11 +412,135 @@ export default function Index() {
             </div>
           </section>
         )}
+
+        {activeSection === 'offer' && (
+          <section className="mb-24 animate-fade-in">
+            <h2 className="text-4xl font-bold font-heading text-white mb-12 text-center">Публичная оферта</h2>
+            <Card className="bg-white/5 border-white/10 max-w-4xl mx-auto p-8">
+              <div className="prose prose-invert max-w-none">
+                <div className="space-y-6 text-white/70">
+                  <h3 className="text-2xl font-bold text-white">1. Общие положения</h3>
+                  <p>
+                    Настоящая публичная оферта (далее - Оферта) является официальным предложением FULL WB 
+                    (далее - Исполнитель) заключить договор на оказание информационно-консультационных услуг 
+                    и продажу цифровых продуктов (далее - Договор).
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">2. Предмет договора</h3>
+                  <p>
+                    Исполнитель обязуется оказать Заказчику информационно-консультационные услуги в области 
+                    продаж на маркетплейсах, а также предоставить доступ к цифровым продуктам согласно выбранному 
+                    тарифу, а Заказчик обязуется оплатить эти услуги.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">3. Стоимость и порядок оплаты</h3>
+                  <p>
+                    Стоимость услуг определяется согласно выбранному тарифу и указывается на сайте. 
+                    Оплата производится в полном объеме до начала оказания услуг посредством электронных платежных систем.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">4. Права и обязанности сторон</h3>
+                  <p>
+                    Исполнитель обязуется предоставить доступ к материалам в течение 24 часов с момента оплаты. 
+                    Заказчик обязуется не распространять полученные материалы третьим лицам.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">5. Возврат средств</h3>
+                  <p>
+                    Возврат денежных средств осуществляется в случае невозможности предоставления услуг по вине Исполнителя. 
+                    После предоставления доступа к цифровым материалам возврат не производится.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">6. Ответственность сторон</h3>
+                  <p>
+                    Исполнитель не несет ответственности за результаты применения Заказчиком полученной информации. 
+                    Все рекомендации носят информационный характер.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </section>
+        )}
+
+        {activeSection === 'privacy' && (
+          <section className="mb-24 animate-fade-in">
+            <h2 className="text-4xl font-bold font-heading text-white mb-12 text-center">Политика конфиденциальности</h2>
+            <Card className="bg-white/5 border-white/10 max-w-4xl mx-auto p-8">
+              <div className="prose prose-invert max-w-none">
+                <div className="space-y-6 text-white/70">
+                  <h3 className="text-2xl font-bold text-white">1. Общие положения</h3>
+                  <p>
+                    Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных 
+                    пользователей сервиса FULL WB.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">2. Собираемые данные</h3>
+                  <p>
+                    Мы собираем следующие персональные данные: имя, адрес электронной почты, номер телефона, 
+                    данные платежей. Эти данные необходимы для предоставления услуг и связи с вами.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">3. Цели обработки данных</h3>
+                  <p>
+                    Персональные данные используются для: предоставления доступа к услугам, обработки платежей, 
+                    информирования об обновлениях и новых предложениях, улучшения качества сервиса.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">4. Защита данных</h3>
+                  <p>
+                    Мы применяем современные технологии защиты информации, включая шифрование данных при передаче 
+                    и хранении. Доступ к персональным данным имеют только уполномоченные сотрудники.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">5. Передача данных третьим лицам</h3>
+                  <p>
+                    Персональные данные могут быть переданы платежным системам для обработки платежей. 
+                    Мы не продаем и не передаем ваши данные третьим лицам в маркетинговых целях.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">6. Права пользователей</h3>
+                  <p>
+                    Вы имеете право на доступ к своим персональным данным, их исправление или удаление. 
+                    Для этого свяжитесь с нами через форму обратной связи.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">7. Cookies</h3>
+                  <p>
+                    Мы используем файлы cookies для улучшения работы сайта и анализа посещаемости. 
+                    Вы можете отключить cookies в настройках браузера.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-white">8. Изменения в политике</h3>
+                  <p>
+                    Мы оставляем за собой право вносить изменения в данную Политику конфиденциальности. 
+                    Актуальная версия всегда доступна на этой странице.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </section>
+        )}
       </main>
 
       <footer className="border-t border-white/10 py-12">
-        <div className="container mx-auto px-4 text-center text-white/60">
-          <p>&copy; 2025 FULL WB. Все права защищены.</p>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
+            <p className="text-white/60">&copy; 2025 FULL WB. Все права защищены.</p>
+            <div className="flex gap-6">
+              <button
+                onClick={() => setActiveSection('offer')}
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                Оферта
+              </button>
+              <button
+                onClick={() => setActiveSection('privacy')}
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                Политика конфиденциальности
+              </button>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
