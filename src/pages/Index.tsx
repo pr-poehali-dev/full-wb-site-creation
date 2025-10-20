@@ -244,11 +244,19 @@ export default function Index() {
                     <h3 className="text-xl font-bold text-white mb-2">{product.name}</h3>
                     <p className="text-white/60 text-sm mb-4">{product.description}</p>
                     <p className="text-2xl font-bold text-[#8B5CF6] mb-4">{product.price.toLocaleString()} ₽</p>
-                    <Button
-                      className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90"
-                    >
-                      Оплатить полностью
-                    </Button>
+                    <div className="space-y-2">
+                      <Button
+                        className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90"
+                      >
+                        Оплатить полностью
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="w-full border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6]/10"
+                      >
+                        Оплатить в рассрочку
+                      </Button>
+                    </div>
                   </div>
                 </Card>
               ))}
