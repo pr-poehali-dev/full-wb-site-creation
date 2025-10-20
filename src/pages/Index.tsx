@@ -126,77 +126,6 @@ export default function Index() {
               >
                 <Icon name={mobileMenuOpen ? "X" : "Menu"} size={20} />
               </Button>
-
-              <Sheet>
-                <SheetTrigger asChild>
-                  <Button variant="outline" size="icon" className="relative border-white/20 hover:bg-white/10">
-                    <Icon name="ShoppingCart" size={20} />
-                    {cartCount > 0 && (
-                      <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-[#8B5CF6]">
-                        {cartCount}
-                      </Badge>
-                    )}
-                  </Button>
-                </SheetTrigger>
-                <SheetContent className="bg-[#1A1F2C] border-white/10">
-                  <SheetHeader>
-                    <SheetTitle className="text-white">Корзина</SheetTitle>
-                  </SheetHeader>
-                  <div className="mt-8 space-y-4">
-                    {cart.length === 0 ? (
-                      <p className="text-white/60 text-center py-8">Корзина пуста</p>
-                    ) : (
-                      <>
-                        {cart.map(item => (
-                          <div key={item.id} className="flex gap-4 p-4 rounded-lg bg-white/5">
-                            <img src={item.image} alt={item.name} className="w-20 h-20 rounded object-cover" />
-                            <div className="flex-1">
-                              <h4 className="font-semibold text-white">{item.name}</h4>
-                              <p className="text-[#8B5CF6] font-bold">{item.price.toLocaleString()} ₽</p>
-                              <div className="flex items-center gap-2 mt-2">
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                  className="h-7 w-7 p-0 border-white/20"
-                                >
-                                  -
-                                </Button>
-                                <span className="text-white w-8 text-center">{item.quantity}</span>
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                  className="h-7 w-7 p-0 border-white/20"
-                                >
-                                  +
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  variant="ghost"
-                                  onClick={() => removeFromCart(item.id)}
-                                  className="ml-auto text-red-400 hover:text-red-300"
-                                >
-                                  <Icon name="Trash2" size={16} />
-                                </Button>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                        <div className="border-t border-white/10 pt-4">
-                          <div className="flex justify-between text-lg font-bold text-white mb-4">
-                            <span>Итого:</span>
-                            <span>{total.toLocaleString()} ₽</span>
-                          </div>
-                          <Button className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90">
-                            Оформить заказ
-                          </Button>
-                        </div>
-                      </>
-                    )}
-                  </div>
-                </SheetContent>
-              </Sheet>
             </div>
           </div>
         </div>
@@ -316,11 +245,9 @@ export default function Index() {
                     <p className="text-white/60 text-sm mb-4">{product.description}</p>
                     <p className="text-2xl font-bold text-[#8B5CF6] mb-4">{product.price.toLocaleString()} ₽</p>
                     <Button
-                      onClick={() => addToCart(product)}
                       className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90"
                     >
-                      <Icon name="ShoppingCart" size={16} className="mr-2" />
-                      В корзину
+                      Оплатить
                     </Button>
                   </div>
                 </Card>
