@@ -22,17 +22,17 @@ const products: Product[] = [
   {
     id: 1,
     name: 'Курс "FULL SELLER"',
-    price: 60000,
+    price: 155900,
     image: 'https://cdn.poehali.dev/files/82ec2ea4-8930-4c48-9222-81f2556faa7e.png',
     description: 'Освой пошаговую стратегию действий для выхода на Wildberries',
     ingredients: ['5 модулей', '20 уроков', 'Поддержка 3 месяца', 'Сертификат']
   },
   {
     id: 2,
-    name: 'Курс "Wildberries PRO"',
+    name: 'Курс "FULL MANAGER WB"',
     price: 120000,
     image: 'https://cdn.poehali.dev/files/7c85a88e-3e6f-44eb-bd22-2f74e22b2c6b.png',
-    description: 'Продвинутый курс для масштабирования бизнеса',
+    description: 'Освой профессию менеджера Wildberries, длительность 6 недель',
     ingredients: ['10 модулей', '50 уроков', 'Поддержка 6 месяцев', 'Личный куратор']
   },
   {
