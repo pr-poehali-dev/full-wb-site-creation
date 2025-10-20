@@ -31,7 +31,7 @@ const products: Product[] = [
     id: 2,
     name: 'Курс "Wildberries PRO"',
     price: 120000,
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop',
+    image: 'https://cdn.poehali.dev/files/7c85a88e-3e6f-44eb-bd22-2f74e22b2c6b.png',
     description: 'Продвинутый курс для масштабирования бизнеса',
     ingredients: ['10 модулей', '50 уроков', 'Поддержка 6 месяцев', 'Личный куратор']
   },
