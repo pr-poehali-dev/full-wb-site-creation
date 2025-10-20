@@ -247,6 +247,11 @@ export default function Index() {
                     <div className="space-y-2">
                       <Button
                         className="w-full bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] hover:opacity-90"
+                        onClick={() => {
+                          if (product.id === 1) {
+                            window.open('https://qr.nspk.ru/AD10006PTORDPC5D98HPT12HV37MMQ6G?type=02&bank=100000000284&sum=15590000&cur=RUB&crc=4C8A', '_blank');
+                          }
+                        }}
                       >
                         Оплатить полностью
                       </Button>
