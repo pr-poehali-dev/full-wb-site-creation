@@ -253,6 +253,11 @@ export default function Index() {
                       <Button
                         variant="outline"
                         className="w-full border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6]/10"
+                        onClick={() => {
+                          if (product.id === 1) {
+                            window.open('https://link.tinkoff.ru/WHik9e7734', '_blank');
+                          }
+                        }}
                       >
                         Оплатить в рассрочку
                       </Button>
