@@ -250,6 +250,8 @@ export default function Index() {
                         onClick={() => {
                           if (product.id === 1) {
                             window.open('https://qr.nspk.ru/AD10006PTORDPC5D98HPT12HV37MMQ6G?type=02&bank=100000000284&sum=15590000&cur=RUB&crc=4C8A', '_blank');
+                          } else if (product.id === 2) {
+                            window.open('https://qr.nspk.ru/AD100014GSGC6EI888GPM4QV04MQ2EV6?type=02&bank=100000000284&sum=7500000&cur=RUB&crc=E7FF', '_blank');
                           }
                         }}
                       >
