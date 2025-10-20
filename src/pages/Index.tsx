@@ -263,10 +263,12 @@ export default function Index() {
                         onClick={() => {
                           if (product.id === 1) {
                             window.open('https://link.tinkoff.ru/WHik9e7734', '_blank');
+                          } else if (product.id === 2) {
+                            window.open('https://link.tinkoff.ru/AsN8cMkEe12', '_blank');
                           }
                         }}
                       >
-                        {product.id === 1 ? 'РАССРОЧКА на 9 месяцев, без первоначального взноса' : 'Оплатить в рассрочку'}
+                        {product.id === 1 ? 'РАССРОЧКА на 9 месяцев, без первоначального взноса' : product.id === 2 ? 'РАССРОЧКА на 6 месяцев, без первоначального взноса' : 'Оплатить в рассрочку'}
                       </Button>
                     </div>
                   </div>
